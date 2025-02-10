@@ -6,8 +6,8 @@ export default {
   "token-creation": "Token Creation",
   "platform-integrations": "Platform Integrations",
   "advanced-features": "Advanced Features",
+  "api-reference": "API Reference",
   "troubleshooting": "Troubleshooting",
   "support": "Support",
-  "api-reference": "API Reference",
   "roadmap": "Updates & Roadmap"
 } as const;
