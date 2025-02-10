@@ -1,0 +1,32 @@
+:root {
+  --nextra-primary-hue: 142deg;
+  --nextra-primary-saturation: 76%;
+  
+  --green-primary: #4ADE80;
+  --green-secondary: #22C55E;
+}
+
+html[class~=dark] {
+  --nextra-primary-hue: 142deg !important;
+  --nextra-primary-saturation: 76% !important;
+  
+  /* Custom link colors */
+  --nextra-primary-color: var(--green-primary) !important;
+  
+  /* Accent colors for dark mode */
+  --nextra-accent-color: var(--green-secondary) !important;
+}
+
+/* Custom button styling */
+.nx-bg-primary-400 {
+  background-color: var(--green-primary) !important;
+}
+
+.nx-bg-primary-400:hover {
+  background-color: var(--green-secondary) !important;
+}
+
+/* Custom link hover effects */
+.nx-text-primary-600:hover {
+  color: var(--green-secondary) !important;
+} 

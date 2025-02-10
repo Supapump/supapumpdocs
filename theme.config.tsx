@@ -1,11 +1,14 @@
 // theme.config.tsx
 import React from 'react'
 import { FaTelegramPlane, FaTwitter } from 'react-icons/fa';
+import { useRouter } from 'next/router'
 
 const config = {
-  logo: <span>Supa Pump Docs</span>,
-  docsRepositoryBase: 'https://github.com/metasal1/supapumpdocs',
+  logo: <span style={{ color: '#4ADE80' }}>Supa Pump Docs</span>,
+  docsRepositoryBase: 'https://github.com/Supapump/supapumpdocs',
+  primaryHue: 142, // Green hue
   darkMode: true,
+  defaultTheme: 'dark',
   sidebar: {
     //defaultMenuCollapseLevel: 1,
     toggleButton: true
@@ -20,7 +23,8 @@ const config = {
           style={{ 
             display: 'inline-block',
             marginRight: '16px',
-            verticalAlign: 'middle'
+            verticalAlign: 'middle',
+            color: '#4ADE80'
           }}
         >
           <FaTelegramPlane size={24} />
@@ -31,7 +35,8 @@ const config = {
           rel="noopener noreferrer"
           style={{ 
             display: 'inline-block',
-            verticalAlign: 'middle'
+            verticalAlign: 'middle',
+            color: '#4ADE80'
           }}
         >
           <FaTwitter size={24} />
@@ -40,10 +45,15 @@ const config = {
     )
   },
   footer: {
-    content: 'Supa Pump Docs'
+    content: <span style={{ color: '#4ADE80' }}>Supa Pump Docs</span>
   },
   // Setting navigation to false to disable any default navigation items
-  navigation: false
+  navigation: false,
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Supa Pump Docs'
+    }
+  }
 }
 
 export default config
