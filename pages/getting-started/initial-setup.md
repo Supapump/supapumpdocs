@@ -28,6 +28,8 @@ Additional commands:
 * /transfer - Send SOL to another wallet
 * /transfertoken - Send SPL tokens to another wallet
 
-Need help? Use /help to see all available commands.
+**Need help?**
+
+Use /help to see all available commands.
 
 Lets learn more about this commands in our next section - [Commands](/basic-commands)
